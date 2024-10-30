@@ -17,7 +17,12 @@ const OurServices = () => {
         {/* Service 1 */}
         <div className="flex flex-col-reverse md:flex-row items-center justify-center bg-[#E6EFFF] px-[20px] md:px-[70px] py-[28px] mt-[61px] rounded-[16px]">
           <div className="w-full md:w-[50%] mt-[24px] md:mt-0">
-            <Image src={OurImageOne} alt="Service Image 1" />
+            <Image
+              src={OurImageOne}
+              alt="Preview of our photo service"
+              width={300}
+              height={300}
+            />
           </div>
           <div className="w-full md:w-[50%] text-center md:text-left">
             <h2 className="text-[24px] sm:text-[32px] font-bold text-commonBlue mb-[16px]">
@@ -51,9 +56,9 @@ const OurServices = () => {
             </h2>
             <p className="text-[16px] sm:text-[18px] font-normal text-black">
               <FontRoboto>
-                It's not just another edge-correcting service. A team trusted by
-                more than 5,000 brands will work on your product with care and
-                creativity.
+                It&apos;s not just another edge-correcting service. A team
+                trusted by more than 5,000 brands will work on your product with
+                care and creativity.
               </FontRoboto>
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start mt-[40px] sm:mt-[56px] gap-[16px] sm:gap-[29px]">
@@ -68,7 +73,12 @@ const OurServices = () => {
             </div>
           </div>
           <div className="w-full md:w-[50%] mt-[24px] md:mt-0 flex justify-center md:justify-end">
-            <Image src={OurImageTow} alt="Service Image 2" />
+            <Image
+              src={OurImageTow}
+              alt="Product revision preview image"
+              width={300}
+              height={300}
+            />
           </div>
         </div>
       </Container>

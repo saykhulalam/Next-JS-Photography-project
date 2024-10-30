@@ -23,7 +23,6 @@ import CompaniFour from "../assets/companiFour.png";
 import CompaniFive from "../assets/companiFive.png";
 
 const BannerSlider = () => {
-  // Create an array of images
   const images = [
     SlideImage1,
     portImage1,
@@ -38,7 +37,6 @@ const BannerSlider = () => {
     portImage6,
   ];
 
-  // Duplicate the images array 4 times
   const duplicatedImages = [...images, ...images, ...images, ...images];
 
   return (
@@ -47,23 +45,47 @@ const BannerSlider = () => {
         <Marquee gradient={true} gradientColor="white" pauseOnHover speed={80}>
           {duplicatedImages.map((src, index) => (
             <div key={index} className="mx-2">
-              <Image src={src} alt="slide image" width={200} height={300} />
+              <Image
+                src={src}
+                alt={`Slide image ${index + 1}`}
+                width={200}
+                height={300}
+              />
             </div>
           ))}
         </Marquee>
         <PeraGraps
           className="mt-[70px]"
-          content="Commercial product photography agency
-      praised by over 5,000 brands."
+          content="Commercial product photography agency praised by over 5,000 brands."
         />
       </SlideContainer>
       <Container>
         <div className="flex flex-wrap justify-center md:justify-between items-center gap-4 mt-[64px]">
-          <Image src={CompaniOne} className="w-[120px] md:w-auto" />
-          <Image src={CompaniTow} className="w-[120px] md:w-auto" />
-          <Image src={CompaniThree} className="w-[120px] md:w-auto" />
-          <Image src={CompaniFour} className="w-[120px] md:w-auto" />
-          <Image src={CompaniFive} className="w-[120px] md:w-auto" />
+          <Image
+            src={CompaniOne}
+            alt="Company One logo"
+            className="w-[120px] md:w-auto"
+          />
+          <Image
+            src={CompaniTow}
+            alt="Company Two logo"
+            className="w-[120px] md:w-auto"
+          />
+          <Image
+            src={CompaniThree}
+            alt="Company Three logo"
+            className="w-[120px] md:w-auto"
+          />
+          <Image
+            src={CompaniFour}
+            alt="Company Four logo"
+            className="w-[120px] md:w-auto"
+          />
+          <Image
+            src={CompaniFive}
+            alt="Company Five logo"
+            className="w-[120px] md:w-auto"
+          />
         </div>
 
         <Devider />
